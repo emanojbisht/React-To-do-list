@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-top: 1px solid black;
+}
+div span {
+  padding: 0.5rem;
+}
+.plus {
+  font-size: 3rem;
+  cursor: pointer;
+}
+.find {
+  cursor: pointer;
+}
+.search {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.status {
+  display: flex;
+  gap: 1.2rem;
+}
+.status span {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.status span:hover,
+.plus:hover,
+.find:hover {
+  border: 1px solid #888;
+}
+
+.status span.active,
+.search span.active {
+  border: 1px solid #888;
+}
+
+@media (max-width: 35em) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container > div {
+    flex: 50%;
+  }
+  .countDiv {
+    display: flex;
+    justify-content: end;
+    align-self: center;
+  }
+  .status {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: start;
+  }
+}

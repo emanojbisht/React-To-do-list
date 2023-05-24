@@ -1,0 +1,29 @@
+.box {
+  min-height: 15rem;
+  height: auto;
+}
+.container {
+  display: flex;
+  justify-content: start;
+  border-bottom: 1px dotted black;
+  margin: 0 5rem;
+}
+.container:last-child {
+  border-bottom: none;
+}
+.p {
+  font-size: 1.8rem;
+}
+.strike {
+  text-decoration: line-through;
+  font-size: 1.8rem;
+}
+.checkbox {
+  width: 1.8rem;
+  margin-right: 1rem;
+}
+@media (max-width: 49em) {
+  .container {
+    margin: 0 1rem;
+  }
+}
